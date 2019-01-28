@@ -2,7 +2,7 @@ apiVersion: skaffold/v1beta3
 kind: Config
 build:
   artifacts:
-  - image: csriman09/nginx
+          - image: csriman09/nginx:latest
 deploy:
   kubectl:
     manifests:
