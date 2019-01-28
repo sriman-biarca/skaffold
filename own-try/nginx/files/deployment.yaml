@@ -1,0 +1,22 @@
+---
+ apiVersion: apps/v1beta2
+ kind: Deployment
+ metadata:
+   name: nginx
+ spec:
+   replicas: 2
+   selector:
+     matchLabels:
+       app: nginx
+   template:
+     metadata:
+       labels:
+         app: nginx
+     spec:
+       imagePullSecrets:
+         - name: regcred
+       containers:
+         - name: nginx
+           image: csriman09/nginx
+           ports:
+           - containerPort: 80
