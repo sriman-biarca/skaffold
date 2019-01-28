@@ -19,6 +19,6 @@ spec:
       - name: regcred
       containers:
       - name: nginx
-        image: csriman09/nginx:7a6961e
+        image: csriman09/nginx:2389535
         ports:
         - containerPort: 80
