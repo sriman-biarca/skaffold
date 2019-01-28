@@ -5,6 +5,7 @@ metadata:
   name: nginx
   annotations:
     flux.weave.works/automated: 'true'
+    flux.weave.works/automated_msg: test
 spec:
   replicas: 2
   selector:
