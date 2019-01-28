@@ -1,0 +1,1 @@
+{"jobID":"440a0538-18d6-a631-bc46-9e39ee639f59","spec":{"type":"policy","cause":{"Message":"","User":"Sriman Chandupatla \u003csrimanc@biarca.com\u003e"},"spec":{"default:deployment/nginx":{"add":null,"remove":{"automated":"true"}}}},"result":null}
