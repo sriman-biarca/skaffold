@@ -1,0 +1,10 @@
+apiVersion: skaffold/v1beta8
+kind: Config
+build:
+  artifacts:
+  - image: csriman09/hello-world
+deploy:
+  kubectl:
+    manifests:
+    - files/deployment.yaml
+    - files/service.yaml

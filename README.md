@@ -9,7 +9,3 @@
  $skaffold build (or) <br />
  $skaffold run (or) <br />
  $skaffold dev <br />
-  
- 
- 
- 
