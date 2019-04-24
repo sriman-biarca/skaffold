@@ -3,9 +3,8 @@ apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
   name: nginx
-  annotations:
-    flux.weave.works/automated_msg: test
-    flux.weave.works/automated: 'true'
+  labels:
+    app: nginx
 spec:
   replicas: 2
   selector:
@@ -16,10 +15,9 @@ spec:
       labels:
         app: nginx
     spec:
-      imagePullSecrets:
-      - name: regcred
       containers:
       - name: nginx
-        image: csriman09/nginx:d03dbfc
+        image: csriman09/nginx
+        #image: csriman09/nginx:7eec32b-dirty
         ports:
         - containerPort: 80

@@ -1,8 +1,8 @@
-apiVersion: skaffold/v1beta3
+apiVersion: skaffold/v1beta8
 kind: Config
 build:
   artifacts:
-          - image: csriman09/nginx
+  - image: csriman09/nginx
 deploy:
   kubectl:
     manifests:
